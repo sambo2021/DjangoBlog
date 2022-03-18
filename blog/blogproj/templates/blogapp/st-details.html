@@ -1,0 +1,16 @@
+{% extends 'tunapp/base.html' %}
+
+{% block title_block %}
+<h1>Student Details</h1>
+<a class='btn btn-warning' href='{% url "home" %}'>Back to Home</a>
+{% endblock %}
+
+
+{% block main_block %}
+
+<h2>First Name</h2>: {{st.fname}}
+<h2>Last Name</h2>: {{st.lname}}
+<h2>Email</h2>: {{st.age}}
+<h2>Track</h2>: {{st.student_track}}
+
+{% endblock%}
